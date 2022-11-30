@@ -1,0 +1,26 @@
+Android studio dependencies
+
+
+1. Android library room
+def room_version = "2.4.3"
+
+    implementation "androidx.room:room-runtime:$room_version"
+    annotationProcessor "androidx.room:room-compiler:$room_version"
+
+2. bumptech/glide
+
+	implementation 'com.github.bumptech.glide:glide:4.14.2'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.14.2'
+	===
+	ImageView imageView = (ImageView) findViewById(R.id.my_image_view);
+
+    Glide.with(this).load("http://goo.gl/gEgYUd").into(imageView);
+	
+3. library retrofit(GSON)
+
+	implementation 'com.squareup.retrofit2:retrofit:(2.9.0)'
+	
+	//convert to GSON
+	implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+
+## internet:    <uses-permission android:name="android.permission.INTERNET" />
